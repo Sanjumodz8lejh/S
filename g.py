@@ -6,10 +6,10 @@ import datetime
 import os
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7371967411:AAFdmOps5rZ3daEhFtUbQavP1WrYrkJAV6w')
+bot = telebot.TeleBot('7342071831:AAHfKI4K-rFEuwlty8ltXmaEw3EnBieaXnI')
 
 # Admin user IDs
-admin_id = ["5885073797"]
+admin_id = ["6719970743"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -46,7 +46,7 @@ allowed_user_ids = read_users()
 
 # Function to log command to the file
 def log_command(user_id, target, port, time):
-    admin_id = ["5885073797"]
+    admin_id = ["5434029241"]
     user_info = bot.get_chat(user_id)
     if user_info.username:
         username = "@" + user_info.username
@@ -276,7 +276,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"🚀 BGMI KI MA CHUD GAYI HAI 🥵 JALDI SE FEEDBACK DO @SPYVARUN🚀\n\n𝙏𝙖𝙧𝙜𝙚𝙩: {target}\n𝙏𝙞𝙢𝙚: {time} 𝙎𝙚𝙘𝙤𝙣𝙙𝙨\n𝘼𝙩𝙩𝙖𝙘𝙠𝙚𝙧 𝙣𝙖𝙢𝙚: @{username}"
+    response = f"🚀 BGMI KI MA CHUD GAYI HAI 🥵 JALDI SE FEEDBACK DO @DEVILxVIPxPAID🚀\n\n𝙏𝙖𝙧𝙜𝙚𝙩: {target}\n𝙏𝙞𝙢𝙚: {time} 𝙎𝙚𝙘𝙤𝙣𝙙𝙨\n𝘼𝙩𝙩𝙖𝙘𝙠𝙚𝙧 𝙣𝙖𝙢𝙚: @{username}"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -315,7 +315,7 @@ def handle_bgmi(message):
                 response = f"[𝘼𝙩𝙩𝙖𝙘𝙠 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙚𝙙] 😈BAHAN KE LODE FEEDBACK DEDE AB KYA MA CHUDATA RAHEGA ATTACK LAGA LAGA KE 😈"
                 #bot.reply_to(message, response)  # Notify the user that the attack is finished
         else:
-            response = "✅ 𝙋𝙡𝙚𝙖𝙨𝙚 𝙥𝙧𝙤𝙫𝙞𝙙𝙚 <𝙄𝙋> <𝙋𝙊𝙍𝙏> <𝙏𝙄𝙈𝙀> 😈ANDI MANDI SANDI JO FEEDBACK NA DE OSKI MA RANDI 😈 SEND A FEEDBACK @SPYVARUN"  # Updated command syntax
+            response = "✅ 𝙋𝙡𝙚𝙖𝙨𝙚 𝙥𝙧𝙤𝙫𝙞𝙙𝙚 <𝙄𝙋> <𝙋𝙊𝙍𝙏> <𝙏𝙄𝙈𝙀> 😈ANDI MANDI SANDI JO FEEDBACK NA DE OSKI MA RANDI 😈 SEND A FEEDBACK @DEVILxVIPxPAID"  # Updated command syntax
     else:
         response = ("🚫 𝙐𝙣𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙨𝙚𝙙 𝘼𝙘𝙘𝙚𝙨𝙨! 🚫\n\nOops! It seems like you don't have permission to use the Attack command. To gain access and unleash the power of attacks, you can:\n👉 Contact an Admin or the Owner for approval.\n🌟 Become a proud supporter and purchase approval.\n💬 Chat with an admin now and level up your experience!\n\nLet's get you the access you need!")
 
